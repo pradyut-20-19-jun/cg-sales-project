@@ -1,7 +1,7 @@
 # cg-sales-project
 
 A.  Database Setup:
-    Import shema to mysql database. File name: sales_management_schema.sql 
+    Import Schema to mysql database. File name: sales_management_schema.sql 
 
 B. Project Setup/Run:
    1. Update database user and password from application.properties
