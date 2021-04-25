@@ -8,8 +8,7 @@ B. Project Setup/Run:
    2. Update log file name from application.properties
    3. Install Maven by command: sudo apt install maven
    4. Go to Project Dir.
-   5. Run folowing command to build Project.
-   
+   5. Run folowing command to build Project.   
       a. Used to clean:                        mvn clean
       b. Used to download lib for first time:  mvn install
       c. Used to compile:                      mvn compile
