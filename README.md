@@ -10,11 +10,11 @@ B. Project Setup/Run:
    4. Go to Project Dir.
    5. Run folowing command to build Project.
    
-      Used to clean:                        mvn clean
-      Used to download lib for first time:  mvn install
-      Used to compile:                      mvn compile
-      Used to test:                         mvn test
-      Used to create jar file:              mvn package
+      > Used to clean:                        mvn clean
+      > Used to download lib for first time:  mvn install
+      > Used to compile:                      mvn compile
+      > Used to test:                         mvn test
+      > Used to create jar file:              mvn package
       
    6. Go to target folder by: cd target 
    7. To find jar:            ls 
