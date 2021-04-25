@@ -21,5 +21,5 @@ B. Project Setup/Run:
    8. java -jar [jar file name].jar
       Exam: java -jar SalesManagement-0.0.1-SAPSHOT.jar
       
-   9. Import "Use case of Sales management.postman_collection.json" into Postman & test.  
+   9. Import Postman collection("Use case of Sales management.postman_collection.json") & test.  
    
