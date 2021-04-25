@@ -1,0 +1,153 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Use case of Sales management",
+		"_postman_id": "5a028c1b-abfe-e9ff-b266-353d1fc796e5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetSalesAndItemsData",
+			"request": {
+				"url": "localhost:8080/sales/get",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CreateSalesAndItemsData",
+			"request": {
+				"url": "localhost:8080/sales/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\n {\n            \"custName\": \"Animesh Sanyal\",\n            \"totSalesItem\": 10,\n            \"totSalesAmount\": 8500,\n            \"itemsList\": [\n                {\n                    \"name\": \"Shirt\",\n                    \"qty\": 5,\n                    \"unitprice\": 200,\n                    \"total\": 1000\n                },\n                 {\n                    \"name\": \"jeans\",\n                    \"qty\": 5,\n                    \"unitprice\": 1500,\n                    \"total\": 7500\n                }\n            ]\n        }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSalesAndItemsData",
+			"request": {
+				"url": "localhost:8080/sales/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 45,\n        \"custName\": \"Malay Sanyal 14\",\n        \"itemsList\": [\n            {\n                \"id\": 46,\n                \"name\": \"Pen 140011\",\n                \"qty\": 5,\n                \"unitprice\": 20,\n                \"total\": 100\n            },\n            {\n                \"name\": \"Marker Pen 1400011\",\n                \"qty\": 10,\n                \"unitprice\": 15,\n                \"total\": 150\n            }\n    \t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSalesAndItemsData",
+			"request": {
+				"url": "localhost:8080/sales/delete/15",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CreateItemsData",
+			"request": {
+				"url": "localhost:8080/sales/66/items/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n\n {\n            \"name\": \"Monte Carlo Women's Shirts\",\n            \"qty\": 10,\n            \"unitprice\": 500\n        }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateItemsData",
+			"request": {
+				"url": "localhost:8080/sales/items/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n                \"id\": 46,\n                \"name\": \"Pen 140001333\",\n                \"qty\": 5,\n                \"unitprice\": 20,\n                \"total\": 100\n            }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetItemsData",
+			"request": {
+				"url": "localhost:8080/sales/items/get",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteItemsData",
+			"request": {
+				"url": "localhost:8080/sales/items/delete/16",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
